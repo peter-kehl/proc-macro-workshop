@@ -71,7 +71,7 @@ impl syn::visit_mut::VisitMut for LexiographicMatching {
                 } else {
                     self.errors.push(syn::Error::new_spanned(
                         &arm.pats,
-                        "unsupported by #[remain::sorted]",
+                        "unsupported by #[sorted]",
                     ));
                     continue;
                 };
